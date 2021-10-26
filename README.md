@@ -5,7 +5,7 @@
 
 light_openpose的编译请跟随(https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch),  注意l_op只可以运行在ubuntu下。
 
-你需要下载light_openpose的预训练模型(https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth)，   然后修改104行为你的路径。
+你需要下载light_openpose的预训练模型(链接: https://pan.baidu.com/s/11_r2mqBCRPwhN-rANYFLcg 提取码: i2p6)，   然后修改104行为你的路径。
 
 (请忽略在运行过程中出现的一切输出，那是我在测试时候写的，懒得删了(诶嘿))
 有问题请提出。
