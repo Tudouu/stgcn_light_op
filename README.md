@@ -1,13 +1,17 @@
 注意！！！！！！！
-这个仓库只是把原stgcn的openpose接口替换为light_openpose，没有对其它代码进行改动，如果你只是训练和测试那么你并不需要任何openpose接口。
+这个仓库只是把原stgcn的openpose接口替换为light_openpose，没有对其它代码进行改动，如果你只是训练和测试stgcn那么你并不需要任何openpose接口。
 
-我没有在原demo_offline上进行改动，而是重新整合了一个draft.py文件，如果你想输入视频，那么修改116行的路径为你的路径。如果你想调用摄像头，修改117行。
+我没有在原demo_offline上进行改动，而是重新整合了一个draft.py文件，如果你想输入视频，那么修改116行的路径为你的路径。如果你想调用摄像头，修改video_path=0。
 
-light_openpose的编译请跟随(https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch),  注意l_op只可以运行在ubuntu下。
+light_openpose的编译请跟随它的readme(https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch),    依赖要求请查看requirements.txt，注意light_openpose只可以运行在ubuntu下。
 
-你需要下载light_openpose的预训练模型(链接: https://pan.baidu.com/s/11_r2mqBCRPwhN-rANYFLcg 提取码: i2p6)，   然后修改104行为你的路径。
+你需要下载light_openpose的预训练模型(链接: https://pan.baidu.com/s/11_r2mqBCRPwhN-rANYFLcg 提取码: i2p6)，   然后修改draft.py的105行和light_openpose/light_op.py里的12行为你的路径，light_op.py亦为我整合而成，用于返回18个坐标点。
 
-(请忽略在运行过程中出现的一切输出，那是我在测试时候写的，懒得删了(诶嘿))
+stgcn的配置和原readme一致。
+
+你只需要运行draft.py就可以运行demo，不需要输入指令。
+
+(请忽略在运行过程中出现的除窗口外一切输出，那是我在测试时候写的，懒得删了(诶嘿))
 有问题请提出。
 
 
