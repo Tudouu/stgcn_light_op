@@ -1,7 +1,7 @@
 注意！！！！！！！
 这个仓库只是把原stgcn的openpose接口替换为light_openpose，没有对其它代码进行改动，如果你只是训练和测试stgcn那么你并不需要任何openpose接口。
 
-我没有在原demo_offline上进行改动，而是重新整合了一个draft.py文件，如果你想输入视频，那么修改116行的路径为你的路径。如果你想调用摄像头，修改video_path=0。
+我没有在原demo_offline上进行改动，而是重新整合了一个draft.py文件，如果你想输入视频，那么修改116行的路径为你的路径。如果你想调用摄像头，修改video_path=0(stgcn默认会取第二帧开始的共339帧，超出的部分会裁剪掉，若小于339则会补零，此值可以在processor/demo_offline.py的261行进行修改，大于339没问题，若小于339会报错但是也是可以运行的)。
 
 light_openpose的编译请跟随它的readme(https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch),    依赖要求请查看requirements.txt，注意light_openpose只可以运行在ubuntu下。
 
@@ -10,6 +10,7 @@ light_openpose的编译请跟随它的readme(https://github.com/Daniil-Osokin/li
 stgcn的配置和原readme一致，修改draft.py的166行为你的st_gcn.kinetics.pt路径。
 
 你只需要运行draft.py就可以运行demo，不需要输入指令。
+
 
 (请忽略在运行过程中出现的除窗口外一切输出，那是我在测试时候写的，懒得删了(诶嘿))
 有问题请提出。
