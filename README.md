@@ -7,7 +7,7 @@ light_openpose的编译请跟随它的readme(https://github.com/Daniil-Osokin/li
 
 你需要下载light_openpose的预训练模型(链接: https://pan.baidu.com/s/11_r2mqBCRPwhN-rANYFLcg 提取码: i2p6)，   然后修改draft.py的105行和light_openpose/light_op.py里的12行为你的路径，light_op.py亦为我整合而成，用于返回18个坐标点。
 
-stgcn的配置和原readme一致。
+stgcn的配置和原readme一致，修改draft.py的166行为你的st_gcn.kinetics.pt路径。
 
 你只需要运行draft.py就可以运行demo，不需要输入指令。
 
