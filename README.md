@@ -14,8 +14,7 @@ stgcn的配置和原readme一致，修改draft.py的166行为你的st_gcn.kineti
 
 (请忽略在运行过程中出现的除窗口外一切输出，那是我在测试时候写的，懒得删了(诶嘿))
 有问题请提出。
-
-
+完整毕设链接 https://github.com/Tudouu/Pose-STTRanhttps://github.com/Tudouu/Pose-STTRan
 
 以下为原readme！！！！！
 ## Reminder
